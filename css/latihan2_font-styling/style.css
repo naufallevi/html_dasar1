@@ -1,0 +1,16 @@
+h1 {
+  font-family: Arial, Impact, sans-serif;
+  font-size: 100px;
+  /* px, %, em */
+  font-weight: bold;
+  /* lighter, normal, 100-900, bold, bolder */
+  font-variant: small-caps;
+  /* normal, small-caps */
+  font-style: italic;
+  /* normal, italic, oblique */
+}
+
+p {
+  font-family: Calibri, sand-serif;
+  line-height: 50px;
+}

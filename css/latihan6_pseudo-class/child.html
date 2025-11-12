@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child CSS</title>
+    <style>
+      li:first-child a {
+        color: red;
+      }
+
+      li:last-child a {
+        color: green;
+      }
+
+      li:nth-child(2n + 1) a {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      /* odd, even, 3 , 3n, 3n+1, 3n-2  */
+
+      li:nth-child(2n + 1) a:hover {
+        font-family: impact;
+      }
+
+      p:first-of-type {
+        word-spacing: 20px;
+        font-variant: small-caps;
+        background-color: rebeccapurple;
+      }
+
+      p:last-of-type {
+        text-indent: 50px;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" class="lorem">Lorem ipsum</a>
+
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+      <li><a href="#">Link 5</a></li>
+      <li><a href="#">Link 6</a></li>
+      <li><a href="#">Link 7</a></li>
+      <li><a href="#">Link 8</a></li>
+      <li><a href="#">Link 9</a></li>
+      <li><a href="#">Link 10</a></li>
+    </ul>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+      corrupti qui quod cumque esse tempore, consequuntur impedit blanditiis
+      dicta ex ipsa! Repellat mollitia atque praesentium deleniti accusantium
+      voluptate suscipit. Sit.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+      exercitationem facere eos dignissimos. Nulla, ipsam dolores. Aperiam nam
+      totam eum vel iusto. Eligendi aspernatur culpa maxime fugiat autem quidem
+      possimus.
+    </p>
+  </body>
+</html>

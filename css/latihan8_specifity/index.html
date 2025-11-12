@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specifity CSS</title>
+    <style>
+      #p1 {
+        color: yellow;
+      }
+
+      p {
+        color: red;
+      }
+
+      p {
+        color: aqua;
+      }
+
+      ul#huruf li {
+        color: aqua;
+      }
+      .abjad {
+        color: red;
+      }
+
+      ul#huruf li.abjad {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="p1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eos
+      quisquam tenetur animi ea, placeat repellendus iste debitis quos cum
+      tempora voluptas obcaecati eligendi consequuntur quasi impedit possimus
+      quibusdam sint.
+    </p>
+
+    <ul id="huruf">
+      <li class="abjad">ABC</li>
+      <li>DEF</li>
+      <li>GHI</li>
+    </ul>
+  </body>
+</html>

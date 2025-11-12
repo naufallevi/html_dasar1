@@ -1,0 +1,94 @@
+/* Margin */
+.satu1 {
+  width: 200px;
+  height: 200px;
+  background-color: lightcoral;
+  margin: 10px 20px 30px 40px;
+}
+
+.dua1 {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  margin: 20px auto 10px;
+}
+
+.tiga1 {
+  width: 50px;
+  height: 50px;
+  background-color: lightblue;
+  margin: 10px auto;
+}
+
+/* Overlapping Margin */
+.satu2,
+.dua2 {
+  display: inline-block;
+}
+
+.satu2 {
+  width: 200px;
+  height: 200px;
+  background-color: lightcoral;
+  margin-bottom: 100px;
+  margin-right: 50px;
+}
+
+.dua2 {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  margin-left: 25px;
+}
+
+.tiga2 {
+  width: 50px;
+  height: 50px;
+  background-color: lightblue;
+  margin-top: 50px;
+}
+
+/* Negative Margin */
+.satu3 {
+  width: 200px;
+  height: 200px;
+  background-color: lightcoral;
+}
+
+.dua3 {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  margin-top: -50px;
+}
+
+.tiga3 {
+  width: 50px;
+  height: 50px;
+  background-color: lightblue;
+}
+
+/* Auto Margin */
+.satu4 {
+  width: 200px;
+  height: 200px;
+  background-color: lightcoral;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dua4 {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tiga4 {
+  width: 50px;
+  height: 50px;
+  background-color: lightblue;
+  margin-left: auto;
+  margin-right: auto;
+}

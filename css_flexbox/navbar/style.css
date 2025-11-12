@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  background-color: #0046ff;
+  justify-content: space-around;
+  color: #73c8d2;
+  height: 60px;
+  align-items: center;
+}
+
+nav .logo {
+  font-family: "Pacifico", cursive;
+  letter-spacing: 3px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 45%;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: #73c8d2;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+nav ul li a:hover {
+  color: #FF9013;
+  font-weight: 800;
+  text-shadow: 0px 1px 2px rgba(255, 144, 19, 0.8);
+}
+
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  /* background-color: black; */
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 9999;
+  /* MAIN */
+  width: 38px;
+  height: 28px;
+  top: -3px;
+  left: -5px;
+  /* ALTERNATIVE */
+  /* top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; */
+}
+
+.menu-toggle span {
+  display: block;
+  background-color: #73c8d2;
+  width: 28px;
+  height: 3px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.menu-toggle:hover span {
+  display: block;
+  background-color: #FF9013;
+  width: 28px;
+  height: 3px;
+  border-radius: 3px;
+}
+
+/* HAMBURGER ANIMATION */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) { 
+  background-color: #FF9013;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: #FF9013;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* RESPONSIVE BREAKPOINT */
+/* TABLET */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 55%;
+  }
+}
+
+/* PHONE */
+@media screen and (max-width: 576px) {
+  nav ul {
+    background-color: #0046ff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: -9999;
+    transform: translateX(100%);
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}

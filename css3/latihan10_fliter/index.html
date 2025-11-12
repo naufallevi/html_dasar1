@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter CSS</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      /* filter:
+      blur(px)
+      brightness (angka | %)
+      contrast (angka | %)
+      saturate (angka | %)
+      grayscale (angka | %)
+      sepia (angka | %)
+      hue-rotate (deg)
+      invert(angka | %)opacity (angka | %)
+      drop-shadow(sama seperti box-shadow)
+      */
+
+      .image {
+        width: 500px;
+        filter: blur(10px) brightness(150%) grayscale(100%);
+        transition: 1s;
+      }
+
+      .image:hover {
+        filter: blur(0) brightness(100%);
+      }
+
+      .logo {
+        filter: drop-shadow(5px 5px 10px red);
+      }
+    </style>
+  </head>
+  <body>
+    <img class="image" src="bg.jpg" alt="Background Image" />
+    <hr />
+    <img class="logo" src="logo.png" alt="Logo Image" />
+  </body>
+</html>

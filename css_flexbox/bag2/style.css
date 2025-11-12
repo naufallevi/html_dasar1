@@ -1,0 +1,169 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eaf0f6;
+  line-height: 1.65;
+}
+
+/* Latihan 1 */
+.container-satu {
+  width: 800px;
+  background-color: #ffffff;
+  margin: 50px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.kolom-utama {
+  flex: 3;
+  order: 2;
+}
+
+.sidebar-satu {
+  flex: 1;
+  order: 1;
+}
+
+.sidebar-dua {
+  flex: 1;
+  order: 3;
+}
+/* Latihan 1 - End */
+
+/* Latihan 2 */
+.container-dua {
+  max-width: 800px;
+  background-color: #ffffff;
+  margin: 50px auto;
+}
+
+.layanan {
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.layanan.satu {
+  background-color: crimson;
+}
+
+.layanan.dua {
+  background-color: greenyellow;
+}
+
+.layanan.tiga {
+  background-color: skyblue;
+}
+/* Latihan 2 - End */
+
+/* Latihan 3 */
+.container-tiga {
+  max-width: 800px;
+  background-color: #ffffff;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 45%;
+  margin: 5px;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+/* Latihan 3 - End */
+
+/* Latihan 4 */
+.container-empat {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #ffffff;
+}
+
+.card {
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: #ccc;
+  overflow: hidden;
+  margin: 10px;
+  margin-top: 30px;
+}
+
+.card .header {
+  background-color: gray;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .content {
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* Latihan 4 - End */
+
+/* Latihan 5 */
+.container-lima {
+  width: 500px;
+  height: 500px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  margin: 50px auto;
+  display: flex;
+}
+
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  color: white;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  overflow: hidden;
+}
+
+.kotak span {
+  margin: auto;
+}
+/* Latihan 5 End */
+
+/* Responisve */
+@media (min-width: 600px) {
+  /* Latihan 2 */
+  .container-dua {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .layanan {
+    width: 30%;
+  }
+  /* Latihan 2 - End */
+
+  /* Latihan 3 */
+  .thumbnail {
+    width: 25%;
+  }
+  /* Latihan 3 - End */
+
+  /* Latihan 4 */
+  .container-empat {
+    display: flex;
+  }
+
+  .card.besar {
+    transform: scale(1.1);
+  }
+  /* Latihan 4 - End */
+}

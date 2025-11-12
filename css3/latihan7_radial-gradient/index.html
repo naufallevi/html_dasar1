@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radial Gradient CSS</title>
+    <style>
+      div {
+        width: 400px;
+        height: 250px;
+        margin: 50px auto;
+        /* background: radial-gradient(tipe | Jangkauan | at | Posisi-y Posisi-x, Warna Pertama (color stop%), warna kedua (color stop%), ..., warna n (color stop%)); */
+        /* Tipe:  ellipse, circle*/
+        /* Jangkauan: farthest side, farthest corner, closest-side, closest-corner*/
+        /* Posisi: ndeg / to top, to bottom, to left, to right / to left top, to left bottom, to right top, to right bottom */
+        background: radial-gradient(circle closest-side at 1% 50%, red, yellow);
+      }
+
+      .box {
+        width: 250px;
+        height: 200px;
+        margin: 10px;
+        display: inline-block;
+        border: 1px solid #ccc;
+      }
+
+      .closest-side {
+        background: radial-gradient(closest-side at 30% 40%, red, yellow);
+      }
+
+      .closest-corner {
+        background: radial-gradient(closest-corner at 30% 40%, red, yellow);
+      }
+
+      .farthest-side {
+        background: radial-gradient(farthest-side at 30% 40%, red, yellow);
+      }
+
+      .farthest-corner {
+        background: radial-gradient(farthest-corner at 30% 40%, red, yellow);
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+
+    <hr />
+
+    <h2>Perbandingan radial-gradient</h2>
+    <div class="box closest-side">closest-side</div>
+    <div class="box closest-corner">closest-corner</div>
+    <div class="box farthest-side">farthest-side</div>
+    <div class="box farthest-corner">farthest-corner</div>
+  </body>
+</html>

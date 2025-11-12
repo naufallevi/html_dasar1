@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .container {
+        width: 600px;
+        margin: 10px auto;
+        border: 5px solid black;
+        box-sizing: border-box;
+        padding: 5px;
+      }
+
+      header {
+        background-color: lightblue;
+        padding: 50px 0;
+      }
+
+      .content::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .sidebar {
+        float: left;
+        width: 30%;
+      }
+
+      .content aside {
+        background-color: lightcoral;
+        padding: 40px 0;
+      }
+
+      .content nav {
+        background-color: lightgreen;
+        padding: 30px 0;
+      }
+
+      main {
+        background-color: lightpink;
+        padding: 81.5px 0;
+        width: 70%;
+        float: right;
+      }
+
+      footer {
+        background-color: lightsalmon;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <div class="content">
+        <div class="sidebar">
+          <aside>Aside</aside>
+          <nav>Nav</nav>
+        </div>
+        <main>Main</main>
+      </div>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>

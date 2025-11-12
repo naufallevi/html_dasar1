@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Pseudo-Class:Target</title>
+    <style>
+      .judul:target {
+        font-size: 100px;
+        font-weight: bold;
+      }
+
+      .p1:target {
+        color: red;
+      }
+
+      .p2:target {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#judul">Judul</a></li>
+      <li><a href="#p1">Paragraf 1</a></li>
+      <li><a href="#p2">Paragraf 2</a></li>
+      <li><a href="">Reset</a></li>
+    </ul>
+    <hr />
+    <h1 id="judul" class="judul">Lorem ipsum</h1>
+    <p id="p1" class="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam itaque
+      quis commodi fugiat minima dicta! Qui fugiat ea perspiciatis aliquam
+      dolore alias ducimus, impedit repellat, rerum reiciendis ipsam, magnam
+      amet!
+    </p>
+    <p id="p2" class="p2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum minima
+      sequi alias, molestias earum consequuntur. Dolorum enim ullam explicabo
+      rem tenetur, delectus consequuntur. Voluptate unde necessitatibus, impedit
+      cum accusamus quia!
+    </p>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TjP's Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="hero">
+          <h2 class="heading">TjP's Shop</h2>
+          <p class="sub-heading">Fashion Store</p>
+        </div>
+        <div class="features feature-1">
+          <h4 class="price">Rp. 159K</h4>
+          <p class="item">Casual Shirt</p>
+        </div>
+        <div class="features feature-2">
+          <h4 class="price">Rp. 159K</h4>
+          <p class="item">Comfortable T-Shirt</p>
+        </div>
+      </header>
+
+      <nav class="menu">
+        <div class="menu-toggle">
+          <input type="checkbox" name="" id="" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="brand">
+          <h1>TjP's Shop</h1>
+        </div>
+        <ul class="menu-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <section class="services">
+        <div class="service">
+          <div class="icon">
+            <img src="icons/shirt.png" alt="" style="width: 60px" />
+          </div>
+          <h3>Shirts</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
+            eveniet ullam officiis laudantium eius corporis autem? Assumenda
+            ipsum aliquam mollitia.
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">
+            <img src="icons/pants.png" alt="" style="width: 60px" />
+          </div>
+          <h3>Pants</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
+            eveniet ullam officiis laudantium eius corporis autem? Assumenda
+            ipsum aliquam mollitia.
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">
+            <img src="icons/t-shirt.png" alt="" style="width: 60px" />
+          </div>
+          <h3>T-Shirt</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
+            eveniet ullam officiis laudantium eius corporis autem? Assumenda
+            ipsum aliquam mollitia.
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2>Gallery</h2>
+        <img src="https://picsum.photos/seed/1/500/500" />
+        <img src="https://picsum.photos/seed/2/500/500" />
+        <img src="https://picsum.photos/seed/3/500/500" />
+        <img src="https://picsum.photos/seed/4/500/500" />
+        <img src="https://picsum.photos/seed/5/500/500" />
+        <img src="https://picsum.photos/seed/6/500/500" />
+        <img src="https://picsum.photos/seed/7/500/500" />
+        <img src="https://picsum.photos/seed/8/500/500" />
+        <img src="https://picsum.photos/seed/9/500/500" />
+        <img src="https://picsum.photos/seed/10/500/500" />
+      </section>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>

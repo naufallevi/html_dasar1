@@ -1,0 +1,7 @@
+body {
+  background-color: white;
+  background-image: url(bg2.png);
+  background-repeat: no-repeat;
+  /* repeat, repeat-x, repeat-y, no-repeat */
+  background-position: top right;
+}

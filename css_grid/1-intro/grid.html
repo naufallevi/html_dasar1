@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .container {
+        width: 600px;
+        margin: 10px auto;
+        border: 5px solid black;
+        box-sizing: border-box;
+        padding: 5px;
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "aside main"
+          "nav main"
+          "footer footer";
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 1fr 1fr 1.5fr auto;
+      }
+
+      header {
+        background-color: lightblue;
+        justify-content: start;
+        align-content: end;
+        grid-area: header;
+      }
+
+      aside {
+        background-color: lightcoral;
+        padding: 40px 0;
+        grid-area: aside;
+      }
+
+      nav {
+        background-color: lightgreen;
+        padding: 60px 0;
+        grid-area: nav;
+      }
+
+      main {
+        background-color: lightpink;
+        /* padding: 81.5px 0; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: main;
+      }
+
+      footer {
+        background-color: lightsalmon;
+        padding: 20px;
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <aside>Aside</aside>
+      <nav>Nav</nav>
+      <main>Main</main>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>

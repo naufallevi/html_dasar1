@@ -1,0 +1,66 @@
+title:
+Interactive CSS Photo Gallery with Lightbox Effect
+
+readme:
+# Interactive CSS Photo Gallery with Lightbox Effect
+
+![Project Demo GIF](https://i.imgur.com/your-image-url.gif)
+*Saran: Unggah GIF singkat yang mendemonstrasikan cara kerja galeri Anda ke imgur.com atau platform serupa, lalu ganti URL di atas.*
+
+Selamat datang di Proyek Galeri Foto Interaktif! Proyek ini adalah sebuah galeri gambar yang dibuat sepenuhnya hanya dengan **HTML** dan **CSS**, tanpa menggunakan JavaScript sama sekali. Galeri ini menampilkan koleksi gambar dengan efek visual yang menarik, seperti *hover effect* dan *overlay lightbox*.
+
+Proyek ini merupakan implementasi kreatif dari pseudo-class `:target` di CSS untuk menciptakan pengalaman galeri yang dinamis dan modern.
+
+---
+
+## ✨ Fitur Utama
+
+* **Galeri Grid**: Tampilan galeri yang rapi dan terorganisir.
+* **Efek Hover Cantik**: Judul gambar akan muncul dengan animasi `rotate` dan `scale` saat kursor diarahkan ke gambar thumbnail.
+* **Efek Lightbox (Overlay)**: Klik pada gambar thumbnail untuk menampilkan versi gambar yang lebih besar dalam sebuah *overlay* tanpa memuat ulang halaman.
+* **Navigasi di Dalam Lightbox**: Pengguna dapat berpindah ke gambar sebelumnya atau berikutnya langsung dari tampilan *overlay*.
+* **Animasi Halus**: Semua transisi, mulai dari *hover* hingga kemunculan gambar, dibuat menggunakan CSS `transition` dan `@keyframes` untuk pengalaman pengguna yang lebih baik.
+* **100% HTML & CSS**: Proyek ini membuktikan kekuatan CSS murni tanpa ketergantungan pada JavaScript.
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+* **HTML5**: Untuk struktur dan konten galeri.
+* **CSS3**: Untuk styling, layouting, animasi, dan semua fungsionalitas interaktif, termasuk:
+    * Flexbox/Float untuk layout grid.
+    * CSS Transitions & Animations (`@keyframes`).
+    * Pseudo-class `:hover` untuk efek pada thumbnail.
+    * Pseudo-class `:target` untuk mengelola status tampilan *overlay* (lightbox).
+
+---
+
+## 🚀 Cara Menggunakan
+
+Untuk menjalankan proyek ini di komputer Anda, ikuti langkah-langkah berikut:
+
+1.  **Clone repositori ini:**
+    ```bash
+    git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
+    ```
+    *(Jangan lupa ganti `your-username` dan `your-repository-name`)*
+
+2.  **Buka direktori proyek:**
+    ```bash
+    cd your-repository-name
+    ```
+
+3.  **Buka file `index.html`:**
+    Buka file `gallery/index.html` langsung di browser favorit Anda (misalnya Google Chrome, Firefox, atau Edge).
+
+Selesai! Sekarang Anda bisa melihat dan berinteraksi dengan galeri foto tersebut.
+
+---
+
+## 📄 Lisensi
+
+Proyek ini bersifat sumber terbuka dan tersedia di bawah Lisensi MIT.
+
+---
+
+*Dibuat dengan HTML dan CSS murni.* ✨

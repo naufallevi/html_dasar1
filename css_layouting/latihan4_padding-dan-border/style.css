@@ -1,0 +1,29 @@
+div {
+  width: 400px;
+  height: 400px;
+  background-color: rosybrown;
+  margin: 50px auto;
+  padding: 10px 20px 30px 40px;
+  border: 10px double blue;
+  /* border: width style color / border-... */
+  /* style = solid, dotted, dashed, double */
+}
+
+.satu, .dua {
+  width: 600px;
+  height: auto;
+  margin: 0px auto 10px;
+  box-sizing: border-box;
+}
+
+.satu {
+  background-color: aqua;
+  padding: 10px;
+  border: 5px solid red;
+}
+
+.dua {
+  background-color: lawngreen;
+    padding: 30px;
+  border: 10px dotted red;
+}

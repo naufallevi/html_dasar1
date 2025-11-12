@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid CSS | Grid Template</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #ddd;
+      }
+
+      .container {
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        grid-template: [sline1] "header header header" 50px [eline1 sline2] "footer footer footer" 100px [eline2] / 1fr 2fr 3fr;
+      }
+
+      .item {
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 100px; */
+        box-sizing: border-box;
+      }
+
+      .item:nth-child(even) {
+        background-color: lightsalmon;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </body>
+</html>

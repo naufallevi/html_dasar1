@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 900px;
+        margin: 10px auto;
+        border: 5px solid black;
+      }
+
+      .kotak {
+        width: 100px;
+        height: 100px;
+        background-color: salmon;
+        border-top: 2px solid black;
+        margin: 5px 0;
+        text-align: center;
+        line-height: 100px;
+      }
+
+      .kotakcustom {
+        transition: transform 1s, margin-left 1s;
+      }
+
+      .kotak1 {
+        transition: all 4s ease;
+      }
+
+      .kotak2 {
+        transition: all 4s ease-in;
+      }
+
+      .kotak3 {
+        transition: all 4s ease-out;
+      }
+
+      .kotak4 {
+        transition: all 4s ease-in-out;
+      }
+
+      .kotak5 {
+        transition: all 4s linear;
+      }
+
+      .kotak6 {
+        transition: all 4s cubic-bezier(0.19, -0.25, 0, 0.41);
+      }
+
+      .container:hover .kotak {
+        transform: rotate(180deg);
+        margin-left: 800px;
+        background-color: greenyellow;
+      }
+
+      .square {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        border-top: 2px solid black;
+        transition: margin-left 2s, transform 2s 2s, background-color 1ms 3s;
+      }
+
+      .container:hover .square {
+        transform: rotate(7200deg);
+        margin-left: 800px;
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="kotak kotakcustom">custom</div>
+      <div class="kotak kotak1">ease</div>
+      <div class="kotak kotak2">ease-in</div>
+      <div class="kotak kotak3">ease-out</div>
+      <div class="kotak kotak4">ease-in-out</div>
+      <div class="kotak kotak5">ease-linear</div>
+      <div class="kotak kotak6">cubic-bezier</div>
+      <div class="square"></div>
+    </div>
+  </body>
+</html>
+  
